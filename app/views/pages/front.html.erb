@@ -1,9 +1,10 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+<div class="jumbotron">
   <div class="container">
     <h1>Student Lunch Manager</h1>
     <p id="intro-paragraph">Keep up with the school menu and make lunch orders here! If you are new to the system, please register.</p>
-    <p><a class="btn btn-primary btn-lg" role="button">Register &raquo;</a></p>
+
+    <p><%= link_to 'Register', register_path, class: 'btn btn-primary btn-lg' %></p>
   </div>
 </div>
 <div class="container">

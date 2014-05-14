@@ -1,5 +1,11 @@
 SDLunchApp::Application.routes.draw do
   root to: 'pages#front'
+
+  resources :sessions, only: [:create]
+  resources :users, only: [:create, :show]
+
+  get 'sign_in', to: 'sessions#new'
+  get 'register', to: 'users#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
