@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-ui-rails'
+gem 'font-awesome-sass'
 
 
 group :development do
