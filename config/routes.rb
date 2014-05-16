@@ -3,6 +3,7 @@ SDLunchApp::Application.routes.draw do
 
   resources :sessions, only: [:create]
   resources :users, only: [:create, :show]
+  resources :menus, only: [:index]
 
   get 'sign_in', to: 'sessions#new'
   get 'register', to: 'users#new'
