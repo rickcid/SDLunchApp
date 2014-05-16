@@ -26,6 +26,7 @@
 
   .notmonth, .notmonth a { color: #CCC; }
   .today { background-color: #D7F2FF; }
+
 }
 
 #menu-items #month {
@@ -40,13 +41,14 @@
   }
 }
 
-#articles ul {
+#menu-items ul {
   font-size: 11px;
   padding-left: 20px;
 }
 
 #calender-container {
   padding-top: 4%;
+  /*position: relative;*/
 }
 
 .check-style {
@@ -57,5 +59,6 @@
 
 #button-position {
   text-align: center;
-  vertical-align: bottom;
+  /*vertical-align:bottom;*/
+  bottom: 0;
 }

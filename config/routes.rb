@@ -1,6 +1,10 @@
 SDLunchApp::Application.routes.draw do
   root to: 'pages#front'
 
+  namespace :admin do
+    resources :menus, only: [:new, :create]
+  end
+
   resources :sessions, only: [:create]
   resources :users, only: [:create, :show]
   resources :menus, only: [:index]
