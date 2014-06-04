@@ -2,12 +2,12 @@ SDLunchApp::Application.routes.draw do
   root to: 'pages#front'
 
   namespace :admin do
-    resources :menus, only: [:new, :create]
+    resources :meals, only: [:new, :create]
   end
 
   resources :sessions, only: [:create]
   resources :users, only: [:create, :show]
-  resources :menus, only: [:index]
+  resources :meals, only: [:index]
 
   get 'sign_in', to: 'sessions#new'
   get 'register', to: 'users#new'
