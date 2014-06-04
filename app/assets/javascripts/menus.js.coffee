@@ -1,3 +1,3 @@
 jQuery ->
-  $('#meal_date').datepicker
+  $('#meal_date_menu').datepicker
     dateFormat: 'yy-mm-dd'
