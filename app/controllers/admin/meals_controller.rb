@@ -8,8 +8,10 @@ class Admin::MealsController < AdminsController
     @meal = Meal.create(meal_params)
     if @meal.save
       flash[:success] = "You have successfully added the meal."
+      redirect_to post_path
     else
       flash[:error] = "You cannot add this meal. Please check the errors."
+      render 'new'
     end
   end
 
